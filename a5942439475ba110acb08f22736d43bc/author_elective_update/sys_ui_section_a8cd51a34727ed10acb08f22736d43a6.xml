@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="New Section" section_id="a8cd51a34727ed10acb08f22736d43a6" sys_domain="global" table="x_156954_two_way_object_property_map" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_sn_field</element>
+            <position>0</position>
+            <sys_created_by>erik.anderson</sys_created_by>
+            <sys_created_on>2023-06-26 15:33:31</sys_created_on>
+            <sys_id>b0cd51a34727ed10acb08f22736d43eb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_156954_two_way_object_property_map" sys_domain="global" view="Default view">a8cd51a34727ed10acb08f22736d43a6</sys_ui_section>
+            <sys_updated_by>erik.anderson</sys_updated_by>
+            <sys_updated_on>2023-06-26 15:33:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>erik.anderson</sys_created_by>
+            <sys_created_on>2023-06-26 15:33:31</sys_created_on>
+            <sys_id>34cd51a34727ed10acb08f22736d43eb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_156954_two_way_object_property_map" sys_domain="global" view="Default view">a8cd51a34727ed10acb08f22736d43a6</sys_ui_section>
+            <sys_updated_by>erik.anderson</sys_updated_by>
+            <sys_updated_on>2023-06-26 15:33:31</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_twtemp_property</element>
+            <position>2</position>
+            <sys_created_by>erik.anderson</sys_created_by>
+            <sys_created_on>2023-06-26 15:33:31</sys_created_on>
+            <sys_id>b4cd51a34727ed10acb08f22736d43eb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_156954_two_way_object_property_map" sys_domain="global" view="Default view">a8cd51a34727ed10acb08f22736d43a6</sys_ui_section>
+            <sys_updated_by>erik.anderson</sys_updated_by>
+            <sys_updated_on>2023-06-26 15:33:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>New Section</caption>
+            <header>false</header>
+            <name>x_156954_two_way_object_property_map</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>erik.anderson</sys_created_by>
+            <sys_created_on>2023-06-26 15:33:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a8cd51a34727ed10acb08f22736d43a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_156954_two_way_object_property_map</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Two Way Sync Template" source="x_156954_two_way">a5942439475ba110acb08f22736d43bc</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Two Way Sync Template">a5942439475ba110acb08f22736d43bc</sys_scope>
+            <sys_update_name>sys_ui_section_a8cd51a34727ed10acb08f22736d43a6</sys_update_name>
+            <sys_updated_by>erik.anderson</sys_updated_by>
+            <sys_updated_on>2023-06-26 15:33:30</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Two Way Sync Template">a5942439475ba110acb08f22736d43bc</application>
+        <file_path/>
+        <instance_id>8f3db847db8a9d508aea21c4059619e6</instance_id>
+        <instance_name>dev136818</instance_name>
+        <name>sys_ui_section_a8cd51a34727ed10acb08f22736d43a6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="New Section" section_id="a8cd51a34727ed10acb08f22736d43a6" sys_domain="global" table="x_156954_two_way_object_property_map" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>u_sn_field</element><position>0</position><sys_created_by>erik.anderson</sys_created_by><sys_created_on>2023-06-26 15:33:31</sys_created_on><sys_id>b0cd51a34727ed10acb08f22736d43eb</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="New Section" display_value="New Section" name="x_156954_two_way_object_property_map" sys_domain="global" view="Default view">a8cd51a34727ed10acb08f22736d43a6</sys_ui_section><sys_updated_by>erik.anderson</sys_updated_by><sys_updated_on>2023-06-26 15:33:31</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>1</position><sys_created_by>erik.anderson</sys_created_by><sys_created_on>2023-06-26 15:33:31</sys_created_on><sys_id>34cd51a34727ed10acb08f22736d43eb</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="New Section" display_value="New Section" name="x_156954_two_way_object_property_map" sys_domain="global" view="Default view">a8cd51a34727ed10acb08f22736d43a6</sys_ui_section><sys_updated_by>erik.anderson</sys_updated_by><sys_updated_on>2023-06-26 15:33:31</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_twtemp_property</element><position>2</position><sys_created_by>erik.anderson</sys_created_by><sys_created_on>2023-06-26 15:33:31</sys_created_on><sys_id>b4cd51a34727ed10acb08f22736d43eb</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="New Section" display_value="New Section" name="x_156954_two_way_object_property_map" sys_domain="global" view="Default view">a8cd51a34727ed10acb08f22736d43a6</sys_ui_section><sys_updated_by>erik.anderson</sys_updated_by><sys_updated_on>2023-06-26 15:33:31</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>New Section</caption><header>false</header><name>x_156954_two_way_object_property_map</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>erik.anderson</sys_created_by><sys_created_on>2023-06-26 15:33:30</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a8cd51a34727ed10acb08f22736d43a6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_156954_two_way_object_property_map</sys_name><sys_overrides/><sys_package display_value="Two Way Sync Template" source="x_156954_two_way">a5942439475ba110acb08f22736d43bc</sys_package><sys_policy/><sys_scope display_value="Two Way Sync Template">a5942439475ba110acb08f22736d43bc</sys_scope><sys_update_name>sys_ui_section_a8cd51a34727ed10acb08f22736d43a6</sys_update_name><sys_updated_by>erik.anderson</sys_updated_by><sys_updated_on>2023-06-26 15:33:30</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-1050757149</payload_hash>
+        <record_name>TWTemp Object Property Map</record_name>
+        <reverted_from/>
+        <source>e5942439475ba110acb08f22736d43be</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-06-26 15:33:31</sys_created_on>
+        <sys_id>34cd51a34727ed10acb08f22736d43ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>188f856b3700000001</sys_recorded_at>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-06-26 15:33:31</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>b8cd51a39c27ed10e4a68de30f335fec</update_guid>
+        <update_guid_history>b8cd51a39c27ed10e4a68de30f335fec:-1050757149</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-06-26 15:37:27</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>650b9d5e9e5244508884732f13a2cc10</sys_id>
+        <sys_metadata>a8cd51a34727ed10acb08f22736d43a6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New Section</sys_name>
+        <sys_package display_value="Two Way Sync Template" source="x_156954_two_way">a5942439475ba110acb08f22736d43bc</sys_package>
+        <sys_parent display_value="TWTemp Object Property Map">2249152f47e3ed10acb08f22736d436b</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Two Way Sync Template">a5942439475ba110acb08f22736d43bc</sys_scope>
+        <sys_scope_delete display_value="">8c5b757b3d19422b91d701ef82728059</sys_scope_delete>
+        <sys_update_name>sys_ui_section_a8cd51a34727ed10acb08f22736d43a6</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_a8cd51a34727ed10acb08f22736d43a6">34cd51a34727ed10acb08f22736d43ed</sys_update_version>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-06-26 15:37:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

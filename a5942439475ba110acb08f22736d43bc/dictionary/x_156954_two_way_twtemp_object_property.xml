@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="update_synch=true" db_object_id="743724bd475ba110acb08f22736d433c" extends="sys_metadata" label="TWTemp Object Property" max_length="40" name="x_156954_two_way_twtemp_object_property" type="collection">
+        <element label="Name" max_length="40" name="u_name" type="string"/>
+        <element label="TWTemp Object" max_length="32" name="u_twtemp_object" reference="x_156954_two_way_twtemp_object" type="reference"/>
+        <element choice="3" default="string" label="Type" max_length="40" name="u_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="String" sequence="0" value="string"/>
+                <element inactive_on_update="false" label="Number" sequence="1" value="number"/>
+                <element inactive_on_update="false" label="Boolean" sequence="2" value="boolean"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="u_twtemp_object"/>
+        </index>
+    </element>
+</database>

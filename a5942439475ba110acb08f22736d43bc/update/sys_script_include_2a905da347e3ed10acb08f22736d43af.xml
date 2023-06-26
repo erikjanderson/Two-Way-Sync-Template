@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_156954_two_way.TWTempObjectProperty</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>TWTempObjectProperty</name>
+        <script><![CDATA[var TWTempObjectProperty = Class.create();
+TWTempObjectProperty.prototype = {
+    initialize: function(twTempObjectPropertyGr) {
+		if(twTempObjectPropertyGr){
+            if(typeof twTempObjectPropertyGr === "string"){
+                twTempObjectPropertyGr = this._getGlideRecordWithId(twTempObjectPropertyGr);
+            }
+			if(twTempObjectPropertyGr + "" === "[object GlideRecord]"){
+				this.setFromGr(twTempObjectPropertyGr);
+			}else if(twTempObjectPropertyGr + "" === "[object Object]"){
+				this.setFromModel(twTempObjectPropertyGr);
+			}
+		}
+    },
+	
+	setFromGr: function(twTempObjectPropertyGr){
+		this.sysId = twTempObjectPropertyGr.getUniqueValue();
+		this.name = twTempObjectPropertyGr.getValue("u_name");
+		this.type = twTempObjectPropertyGr.getValue("u_type");
+	},
+
+	setFromModel: function(model){
+		for(var key in model){
+			this[key] = model[key];
+		}
+	},
+
+	//Internal Functions
+	
+	_getReferenceField: function(columnName, twTempObjectPropertyGr){
+		var returnObj = {};
+		if(columnName){
+			returnObj.id = twTempObjectPropertyGr.getValue(columnName);
+			returnObj.displayValue = twTempObjectPropertyGr.getDisplayValue(columnName);
+		}
+		return returnObj;
+	},
+
+    _getGlideRecordWithId: function(id){
+        var twTempObjectPropertyGr = new GlideRecord("x_156954_two_way_twtemp_object_property");
+        if(twTempObjectPropertyGr.get(id)){
+            return twTempObjectPropertyGr;
+        }
+    },
+				
+    type: 'TWTempObjectProperty'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-06-26 14:36:02</sys_created_on>
+        <sys_id>2a905da347e3ed10acb08f22736d43af</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>TWTempObjectProperty</sys_name>
+        <sys_package display_value="Two Way Sync Template" source="x_156954_two_way">a5942439475ba110acb08f22736d43bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Two Way Sync Template">a5942439475ba110acb08f22736d43bc</sys_scope>
+        <sys_update_name>sys_script_include_2a905da347e3ed10acb08f22736d43af</sys_update_name>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-06-26 14:37:17</sys_updated_on>
+    </sys_script_include>
+</record_update>

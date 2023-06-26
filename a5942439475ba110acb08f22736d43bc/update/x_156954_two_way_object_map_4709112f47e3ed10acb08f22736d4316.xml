@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_156954_two_way_object_map">
+    <x_156954_two_way_object_map action="INSERT_OR_UPDATE">
+        <sys_class_name>x_156954_two_way_object_map</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-06-26 15:13:17</sys_created_on>
+        <sys_id>4709112f47e3ed10acb08f22736d4316</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Network Adapters</sys_name>
+        <sys_package display_value="Two Way Sync Template" source="x_156954_two_way">a5942439475ba110acb08f22736d43bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Two Way Sync Template">a5942439475ba110acb08f22736d43bc</sys_scope>
+        <sys_update_name>x_156954_two_way_object_map_4709112f47e3ed10acb08f22736d4316</sys_update_name>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-06-26 15:13:17</sys_updated_on>
+        <u_name>Network Adapters</u_name>
+        <u_parent display_value="Computers">215891eb47e3ed10acb08f22736d43e8</u_parent>
+        <u_sn_table>cmdb_ci_network_adapter</u_sn_table>
+        <u_twtemp_object display_value="MAC Address">f41e0d2347e3ed10acb08f22736d4334</u_twtemp_object>
+    </x_156954_two_way_object_map>
+</record_update>

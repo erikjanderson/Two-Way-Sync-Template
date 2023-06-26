@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="update_synch=true" db_object_id="2249152f47e3ed10acb08f22736d436b" extends="sys_metadata" label="TWTemp Object Property Map" max_length="40" name="x_156954_two_way_object_property_map" type="collection">
+        <element label="Map" mandatory="true" max_length="32" name="u_map" reference="x_156954_two_way_object_map" type="reference"/>
+        <element attributes="allow_references=true" dependent="u_sn_table" dependent_on_field="u_sn_table" display="true" label="SN field" mandatory="true" max_length="80" name="u_sn_field" type="field_name" use_dependent_field="true"/>
+        <element attributes="allow_public=true" default="javascript:parent.u_sn_table" label="SN table" max_length="80" name="u_sn_table" read_only="true" type="table_name"/>
+        <element label="TWTemp property" mandatory="true" max_length="32" name="u_twtemp_property" reference="x_156954_two_way_twtemp_object_property" reference_qual="javascript:&quot;u_twtemp_object=&quot; + current.u_map.u_twtemp_object" type="reference" use_reference_qualifier="advanced"/>
+        <index name="index">
+            <element name="u_map"/>
+        </index>
+        <index name="index2">
+            <element name="u_twtemp_property"/>
+        </index>
+    </element>
+</database>

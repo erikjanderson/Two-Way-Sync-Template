@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_156954_two_way.TWTempObject</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>TWTempObject</name>
+        <script><![CDATA[var TWTempObject = Class.create();
+TWTempObject.prototype = {
+    initialize: function(twTempObjectGr) {
+		if(twTempObjectGr){
+            if(typeof twTempObjectGr === "string"){
+                twTempObjectGr = this._getGlideRecordWithId(twTempObjectGr);
+            }
+			if(twTempObjectGr + "" === "[object GlideRecord]"){
+				this.setFromGr(twTempObjectGr);
+			}else if(twTempObjectGr + "" === "[object Object]"){
+				this.setFromModel(twTempObjectGr);
+			}
+		}
+    },
+	
+	setFromGr: function(twTempObjectGr){
+		this.sysId = twTempObjectGr.getUniqueValue();
+		this.label = twTempObjectGr.getValue("u_label");
+		this.name = twTempObjectGr.getValue("u_name");
+		this.type = twTempObjectGr.getValue("u_type");
+		this.properties = this._getProperties();
+		this.childObjects = this._getChildObjects();
+	},
+
+	setFromModel: function(model){
+		for(var key in model){
+			this[key] = model[key];
+		}
+	},
+
+	// insert: function(){
+	// 	var twTempObjectGr = new GlideRecord("x_156954_two_way_twtemp_object");
+	// 	twTempObjectGr.initialize();
+	// 	twTempObjectGr = this._assignGlideRecordValues(twTempObjectGr);
+	// 	this.sysId = twTempObjectGr.insert();
+	// },
+		
+	// update: function(){
+	// 	var twTempObjectGr = new GlideRecord("x_156954_two_way_twtemp_object");
+	// 	if(twTempObjectGr.get(this.sysId)){
+	// 		twTempObjectGr = this._assignGlideRecordValues(twTempObjectGr);
+	// 		twTempObjectGr.update();
+	// 	}
+	// },
+
+	// deleteRecord: function(){
+	// 	var twTempObjectGr = new GlideRecord("x_156954_two_way_twtemp_object");
+	// 	if(twTempObjectGr.get(this.sysId)){
+	// 		twTempObjectGr.deleteRecord();
+	// 	}
+	// },
+
+	//Internal Functions
+
+	_getProperties: function(){
+		var properties = [];
+		var twTempObjectPropertyGr = new GlideRecord('x_156954_two_way_twtemp_object_property');
+		twTempObjectPropertyGr.addQuery('u_twtemp_object', this.sysId);
+		twTempObjectPropertyGr.query();
+		while(twTempObjectPropertyGr.next()){
+			properties.push(new TWTempObjectProperty(twTempObjectPropertyGr));
+		}
+		return properties;
+	},
+
+	_getChildObjects: function(){
+		var childObjects = [];
+		var twTempObjectGr = new GlideRecord("x_156954_two_way_twtemp_object");
+		twTempObjectGr.addQuery('u_parent', this.sysId);
+		twTempObjectGr.query();
+		while(twTempObjectGr.next()){
+			childObjects.push(new TWTempObject(twTempObjectGr));
+		}
+		return childObjects;
+	},
+	
+	_getReferenceField: function(columnName, twTempObjectGr){
+		var returnObj = {};
+		if(columnName){
+			returnObj.id = twTempObjectGr.getValue(columnName);
+			returnObj.displayValue = twTempObjectGr.getDisplayValue(columnName);
+		}
+		return returnObj;
+	},
+
+    _getGlideRecordWithId: function(id){
+        var twTempObjectGr = new GlideRecord("x_156954_two_way_twtemp_object");
+        if(twTempObjectGr.get(id)){
+            return twTempObjectGr;
+        }
+    },
+				
+    type: 'TWTempObject'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-06-26 14:33:24</sys_created_on>
+        <sys_id>c4005da347e3ed10acb08f22736d437a</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>TWTempObject</sys_name>
+        <sys_package display_value="Two Way Sync Template" source="x_156954_two_way">a5942439475ba110acb08f22736d43bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Two Way Sync Template">a5942439475ba110acb08f22736d43bc</sys_scope>
+        <sys_update_name>sys_script_include_c4005da347e3ed10acb08f22736d437a</sys_update_name>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-06-26 14:41:06</sys_updated_on>
+    </sys_script_include>
+</record_update>

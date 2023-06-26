@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_156954_two_way_object_property_map">
+    <x_156954_two_way_object_property_map action="DELETE">
+        <sys_class_name>x_156954_two_way_object_property_map</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-06-26 15:28:28</sys_created_on>
+        <sys_id>ef7cd5234727ed10acb08f22736d439e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Two Way Sync Template" source="x_156954_two_way">a5942439475ba110acb08f22736d43bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Two Way Sync Template">a5942439475ba110acb08f22736d43bc</sys_scope>
+        <sys_update_name>x_156954_two_way_object_property_map_ef7cd5234727ed10acb08f22736d439e</sys_update_name>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-06-26 15:28:28</sys_updated_on>
+        <u_map display_value="Computers">215891eb47e3ed10acb08f22736d43e8</u_map>
+        <u_sn_field>test</u_sn_field>
+        <u_sn_table/>
+        <u_twtemp_property/>
+    </x_156954_two_way_object_property_map>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Two Way Sync Template">a5942439475ba110acb08f22736d43bc</application>
+        <file_path/>
+        <instance_id>8f3db847db8a9d508aea21c4059619e6</instance_id>
+        <instance_name>dev136818</instance_name>
+        <name>x_156954_two_way_object_property_map_ef7cd5234727ed10acb08f22736d439e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_156954_two_way_object_property_map"><x_156954_two_way_object_property_map action="INSERT_OR_UPDATE"><sys_class_name>x_156954_two_way_object_property_map</sys_class_name><sys_created_by>erik.anderson</sys_created_by><sys_created_on>2023-06-26 15:28:28</sys_created_on><sys_id>ef7cd5234727ed10acb08f22736d439e</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Two Way Sync Template" source="x_156954_two_way">a5942439475ba110acb08f22736d43bc</sys_package><sys_policy/><sys_scope display_value="Two Way Sync Template">a5942439475ba110acb08f22736d43bc</sys_scope><sys_update_name>x_156954_two_way_object_property_map_ef7cd5234727ed10acb08f22736d439e</sys_update_name><sys_updated_by>erik.anderson</sys_updated_by><sys_updated_on>2023-06-26 15:28:28</sys_updated_on><u_map display_value="Computers">215891eb47e3ed10acb08f22736d43e8</u_map><u_sn_field>test</u_sn_field><u_sn_table/><u_twtemp_property/></x_156954_two_way_object_property_map></record_update>]]></payload>
+        <payload_hash>-408132526</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>e5942439475ba110acb08f22736d43be</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-06-26 15:28:28</sys_created_on>
+        <sys_id>fe9c19234727ed10acb08f22736d433b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>188f85211e70000001</sys_recorded_at>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-06-26 15:28:28</sys_updated_on>
+        <type>TWTemp Object Property Map</type>
+        <update_guid>f29c19237027ed106f1ead4fa827453b</update_guid>
+        <update_guid_history>f29c19237027ed106f1ead4fa827453b:-408132526</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">71ac91234727ed10acb08f22736d43fe</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-06-26 15:28:40</sys_created_on>
+        <sys_db_object display_value="" name="x_156954_two_way_object_property_map">x_156954_two_way_object_property_map</sys_db_object>
+        <sys_id>0cd79debc24140b597cd1a701b8321c1</sys_id>
+        <sys_metadata>ef7cd5234727ed10acb08f22736d439e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Two Way Sync Template" source="x_156954_two_way">a5942439475ba110acb08f22736d43bc</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Two Way Sync Template">a5942439475ba110acb08f22736d43bc</sys_scope>
+        <sys_scope_delete display_value="">8c5b757b3d19422b91d701ef82728059</sys_scope_delete>
+        <sys_update_name>x_156954_two_way_object_property_map_ef7cd5234727ed10acb08f22736d439e</sys_update_name>
+        <sys_update_version display_value="x_156954_two_way_object_property_map_ef7cd5234727ed10acb08f22736d439e">fe9c19234727ed10acb08f22736d433b</sys_update_version>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-06-26 15:28:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

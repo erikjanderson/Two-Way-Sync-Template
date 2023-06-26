@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_sn_table" label="SN table" language="en" table="x_156954_two_way_object_property_map">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_sn_table</element>
+            <help/>
+            <hint/>
+            <label>SN table</label>
+            <language>en</language>
+            <name>x_156954_two_way_object_property_map</name>
+            <plural>SN tables</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>erik.anderson</sys_created_by>
+            <sys_created_on>2023-06-26 15:17:21</sys_created_on>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>SN table</sys_name>
+            <sys_package display_value="Two Way Sync Template" source="x_156954_two_way">a5942439475ba110acb08f22736d43bc</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Two Way Sync Template">a5942439475ba110acb08f22736d43bc</sys_scope>
+            <sys_update_name>sys_documentation_x_156954_two_way_object_property_map_u_sn_table_en</sys_update_name>
+            <sys_updated_by>erik.anderson</sys_updated_by>
+            <sys_updated_on>2023-06-26 15:18:16</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
