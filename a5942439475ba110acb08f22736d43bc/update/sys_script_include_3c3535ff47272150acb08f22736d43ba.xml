@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_156954_two_way.TWTempObjectMap</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>TWTempObjectMap</name>
+        <script><![CDATA[var TWTempObjectMap = Class.create();
+TWTempObjectMap.prototype = {
+    initialize: function(twTempObjectMapGr) {
+		if(twTempObjectMapGr){
+            if(typeof twTempObjectMapGr === "string"){
+                twTempObjectMapGr = this._getGlideRecordWithId(twTempObjectMapGr);
+            }
+			if(twTempObjectMapGr + "" === "[object GlideRecord]"){
+				this.setFromGr(twTempObjectMapGr);
+			}else if(twTempObjectMapGr + "" === "[object Object]"){
+				this.setFromModel(twTempObjectMapGr);
+			}
+		}
+    },
+
+	previewGr: function(gr){
+		var validGr = this._validateGrTable(gr);
+		if(!validGr){
+			gs.warn('Two Way Sync Template TWTempObjectMap (previewGr): ' + gr.getTableName() + ' is not in the same hierarchy as this map. Map table is ' + this.snTable);
+			return;
+		}
+		var previewObj = this._getGrProperties(gr);
+		for(var i = 0; i < this.childMaps.length; i++){
+			var childMap = this.childMaps[i];
+			if(childMap.childType === 'array'){
+				previewObj[childMap.snTable] = [];
+				var childGr = this._getChildGr(childMap, gr);
+				while(childGr.next()){
+					var childPreviewObj = childMap.previewGr(childGr);
+					if(childPreviewObj){
+						previewObj[childMap.snTable].push(childPreviewObj);
+					}
+				}
+			}else if(childMap.childType === 'object'){
+				previewObj[childMap.snTable] = {}
+				var childGr = this._getChildGr(childMap, gr);
+				if(childGr.next()){
+					var childPreviewObj = childMap.previewGr(childGr);
+					if(childPreviewObj){
+						previewObj[childMap.snTable] = childPreviewObj;
+					}
+				}
+			}
+		}
+		return previewObj;
+	},
+
+	convertToTWTempObject: function(previewObject, twTempObject){
+		if(!previewObject){
+			gs.warn('Two Way Sync Template TWTempObjectMap (convertToTWTempObject): no previewObject provided.');
+			return;
+		}
+		if(!twTempObject){
+			//this.twTempObject = new TWTempObject(this.twTempObject.id);
+		}
+
+		this._buildPathDictionary();
+
+		
+
+
+
+
+
+
+		// this.twTempObject.initializeNewObject();
+
+		// this._settwTempProperties();
+
+		// for(var i = 0; i < this.childMaps.length; i++){
+		// 	var childMap = this.childMaps[i];
+		// 	//childMap.twTempObject = new TWTempObjectMap(childMap.twTempObject.id);
+		// 	childMap.convertToTWTempObject()
+		// }
+		
+
+
+		//gs.info(JSON.stringify(this.twTempObject));
+	},
+	
+	setFromGr: function(twTempObjectMapGr){
+		this.sysId = twTempObjectMapGr.getUniqueValue();
+		this.name = twTempObjectMapGr.getValue("u_name");
+		this.snTable = twTempObjectMapGr.getValue("u_sn_table");
+		this.referenceField = twTempObjectMapGr.getValue("u_reference_field");
+		this.childType = twTempObjectMapGr.getValue("u_child_type");
+		this.twTempObject = this._getReferenceField("u_twtemp_object", twTempObjectMapGr);  
+		this.propertyMaps = this._getPropertyMaps();
+		this.childMaps = this._getChildMaps();
+	},
+
+	setFromModel: function(model){
+		for(var key in model){
+			this[key] = model[key];
+		}
+	},
+
+	//Internal Functions
+	
+	_getChildMaps: function(){
+		var childMaps = [];
+		var twTempObjectMapGr = new GlideRecord("x_156954_two_way_object_map");
+		twTempObjectMapGr.addQuery('u_parent', this.sysId);
+		twTempObjectMapGr.query();
+		while(twTempObjectMapGr.next()){
+			childMaps.push(new TWTempObjectMap(twTempObjectMapGr));
+		}
+		return childMaps;
+	},
+
+	_getPropertyMaps: function(){
+		var propertyMaps = [];
+		var twTempObjectPropertyMapGr = new GlideRecord("x_156954_two_way_object_property_map");
+		twTempObjectPropertyMapGr.addQuery('u_map', this.sysId);
+		twTempObjectPropertyMapGr.query();
+		while(twTempObjectPropertyMapGr.next()){
+			propertyMaps.push(new TWTempObjectPropertyMap(twTempObjectPropertyMapGr));
+		}
+		return propertyMaps;
+	},
+
+	_getReferenceField: function(columnName, twTempObjectMapGr){
+		var returnObj = {};
+		if(columnName){
+			returnObj.id = twTempObjectMapGr.getValue(columnName);
+			returnObj.displayValue = twTempObjectMapGr.getDisplayValue(columnName);
+		}
+		return returnObj;
+	},
+
+
+    _getGlideRecordWithId: function(id){
+        var twTempObjectMapGr = new GlideRecord("x_156954_two_way_object_map");
+        if(twTempObjectMapGr.get(id)){
+            return twTempObjectMapGr;
+        }
+    },
+
+	_validateGrTable: function(gr){
+		var grTable = gr.getTableName();
+		var snTableHierarchy = new GlideTableHierarchy(this.snTable);
+		var tableExtensions = snTableHierarchy.getAllExtensions();
+		if(tableExtensions.indexOf(grTable) > -1){
+			return true;
+		}else{
+			return false;
+		}
+	},
+
+	_getGrProperties: function(gr){
+		var properties = {};
+		for(var i = 0; i < this.propertyMaps.length; i++){
+			var propertyMap = this.propertyMaps[i];
+			var field = propertyMap.snField;
+			//Apply some additional scripting logic?
+			properties[field] = gr.getElement(field).toString();
+		}
+		return properties;
+	},
+
+	_getChildGr: function(childMap, gr){
+		var childGr = new GlideRecord(childMap.snTable);
+		childGr.addQuery(childMap.referenceField, gr.getUniqueValue());
+		childGr.query();
+		return childGr;
+	},
+
+	_settwTempProperties: function(previewObject){
+		for(var i = 0; i < this.propertyMaps.length; i++){
+			var propertyMap = this.propertyMaps[i];
+			this.twTempObject.setValue(propertyMap.twTempProperty.displayValue, previewObject[propertyMap.snField]);
+		}
+	},
+
+	_buildPathDictionary: function(pathDictionary, prePath){
+		if(!pathDictionary){
+			pathDictionary = {};
+			prePath = '';
+		}else{
+			prePath += '.';
+		}
+		for(var i = 0; i < this.propertyMaps.length; i++){
+			var propertyMap = this.propertyMaps[i];
+			pathDictionary[prePath + propertyMap.snField] = propertyMap.twTempProperty;
+		}
+		for(var c = 0; c < this.childMaps.length; c++){
+			var childMap = this.childMaps[c];
+			pathDictionary = childMap._buildPathDictionary(pathDictionary, prePath + childMap.snTable);
+		}
+		return pathDictionary;
+	},
+
+				
+    type: 'TWTempObjectMap'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-06-27 11:54:23</sys_created_on>
+        <sys_id>3c3535ff47272150acb08f22736d43ba</sys_id>
+        <sys_mod_count>85</sys_mod_count>
+        <sys_name>TWTempObjectMap</sys_name>
+        <sys_package display_value="Two Way Sync Template" source="x_156954_two_way">a5942439475ba110acb08f22736d43bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Two Way Sync Template">a5942439475ba110acb08f22736d43bc</sys_scope>
+        <sys_update_name>sys_script_include_3c3535ff47272150acb08f22736d43ba</sys_update_name>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-06-30 17:23:45</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_156954_two_way_object_property_map">
+    <x_156954_two_way_object_property_map action="INSERT_OR_UPDATE">
+        <sys_class_name>x_156954_two_way_object_property_map</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-06-29 14:01:17</sys_created_on>
+        <sys_id>294524244733e150acb08f22736d436d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>asset.asset_tag</sys_name>
+        <sys_package display_value="Two Way Sync Template" source="x_156954_two_way">a5942439475ba110acb08f22736d43bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Two Way Sync Template">a5942439475ba110acb08f22736d43bc</sys_scope>
+        <sys_update_name>x_156954_two_way_object_property_map_294524244733e150acb08f22736d436d</sys_update_name>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-06-29 14:01:17</sys_updated_on>
+        <u_map display_value="Computers">215891eb47e3ed10acb08f22736d43e8</u_map>
+        <u_sn_field>asset.asset_tag</u_sn_field>
+        <u_sn_table>cmdb_ci_computer</u_sn_table>
+        <u_twtemp_property display_value="assetTag">1b55a4244733e150acb08f22736d432b</u_twtemp_property>
+    </x_156954_two_way_object_property_map>
+</record_update>

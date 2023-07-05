@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_156954_two_way_object_map">
+    <x_156954_two_way_object_map action="INSERT_OR_UPDATE">
+        <sys_class_name>x_156954_two_way_object_map</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-06-29 18:06:38</sys_created_on>
+        <sys_id>5a7d992447f3e150acb08f22736d4359</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>IP Address</sys_name>
+        <sys_package display_value="Two Way Sync Template" source="x_156954_two_way">a5942439475ba110acb08f22736d43bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Two Way Sync Template">a5942439475ba110acb08f22736d43bc</sys_scope>
+        <sys_update_name>x_156954_two_way_object_map_5a7d992447f3e150acb08f22736d4359</sys_update_name>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-06-29 18:06:38</sys_updated_on>
+        <u_child_type>array</u_child_type>
+        <u_name>IP Address</u_name>
+        <u_parent display_value="Network Adapters">4709112f47e3ed10acb08f22736d4316</u_parent>
+        <u_reference_field>nic</u_reference_field>
+        <u_sn_table>cmdb_ci_ip_address</u_sn_table>
+        <u_twtemp_object display_value="IP Address">52271d2447f3e150acb08f22736d4351</u_twtemp_object>
+    </x_156954_two_way_object_map>
+</record_update>

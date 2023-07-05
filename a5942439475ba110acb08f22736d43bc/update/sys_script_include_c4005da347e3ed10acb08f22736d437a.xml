@@ -26,7 +26,7 @@ TWTempObject.prototype = {
 		this.sysId = twTempObjectGr.getUniqueValue();
 		this.label = twTempObjectGr.getValue("u_label");
 		this.name = twTempObjectGr.getValue("u_name");
-		this.type = twTempObjectGr.getValue("u_type");
+		this.objectType = twTempObjectGr.getValue("u_type");
 		this.properties = this._getProperties();
 		this.childObjects = this._getChildObjects();
 	},
@@ -37,48 +37,59 @@ TWTempObject.prototype = {
 		}
 	},
 
-	// insert: function(){
-	// 	var twTempObjectGr = new GlideRecord("x_156954_two_way_twtemp_object");
-	// 	twTempObjectGr.initialize();
-	// 	twTempObjectGr = this._assignGlideRecordValues(twTempObjectGr);
-	// 	this.sysId = twTempObjectGr.insert();
-	// },
-		
-	// update: function(){
-	// 	var twTempObjectGr = new GlideRecord("x_156954_two_way_twtemp_object");
-	// 	if(twTempObjectGr.get(this.sysId)){
-	// 		twTempObjectGr = this._assignGlideRecordValues(twTempObjectGr);
-	// 		twTempObjectGr.update();
-	// 	}
-	// },
+	initializeNewObject: function(){
+		if(this.objectType === 'object'){
+			this.mainObject = {};	
+		}else if(this.objectType === 'array'){
+			if(!this.mainArray){
+				this.mainArray = [];
+			}
+			this.mainArray.push({});
+			this.mainObject = this.mainArray[this.mainArray.length - 1];
+		}
+	},
 
-	// deleteRecord: function(){
-	// 	var twTempObjectGr = new GlideRecord("x_156954_two_way_twtemp_object");
-	// 	if(twTempObjectGr.get(this.sysId)){
-	// 		twTempObjectGr.deleteRecord();
-	// 	}
-	// },
+	setValue: function(key, value){
+		if(!this.properties[key]){
+			gs.warn('Two Way Sync Template TWTempObject (setValue): ' + key  + ' is not a configured property for ' + this.name);
+			return;
+		}
+		if(!value){
+			value = '';
+		}
+		var val;
+		if (this.properties[key].type === 'string'){
+			val = value.toString();
+		}else if (this.properties[key].type === 'number'){
+			val = parseFloat(value);
+		}else {
+			val = value;
+		}
+		this.mainObject[key] = val;
+	},
 
 	//Internal Functions
 
 	_getProperties: function(){
-		var properties = [];
+		var properties = {}
 		var twTempObjectPropertyGr = new GlideRecord('x_156954_two_way_twtemp_object_property');
 		twTempObjectPropertyGr.addQuery('u_twtemp_object', this.sysId);
 		twTempObjectPropertyGr.query();
 		while(twTempObjectPropertyGr.next()){
-			properties.push(new TWTempObjectProperty(twTempObjectPropertyGr));
+			var twTempObjectProperty = new TWTempObjectProperty(twTempObjectPropertyGr);
+			properties[twTempObjectProperty.name] = twTempObjectProperty;
 		}
 		return properties;
 	},
 
 	_getChildObjects: function(){
-		var childObjects = [];
+		var childObjects = {};
 		var twTempObjectGr = new GlideRecord("x_156954_two_way_twtemp_object");
 		twTempObjectGr.addQuery('u_parent', this.sysId);
 		twTempObjectGr.query();
 		while(twTempObjectGr.next()){
-			childObjects.push(new TWTempObject(twTempObjectGr));
+			var childTWTempObject = new TWTempObject(twTempObjectGr)
+			childObjects[childTWTempObject.name] = childTWTempObject;
 		}
 		return childObjects;
 	},
@@ -98,20 +109,20 @@ TWTempObject.prototype = {
             return twTempObjectGr;
         }
     },
-				
+		
     type: 'TWTempObject'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>erik.anderson</sys_created_by>
         <sys_created_on>2023-06-26 14:33:24</sys_created_on>
         <sys_id>c4005da347e3ed10acb08f22736d437a</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name>TWTempObject</sys_name>
         <sys_package display_value="Two Way Sync Template" source="x_156954_two_way">a5942439475ba110acb08f22736d43bc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Two Way Sync Template">a5942439475ba110acb08f22736d43bc</sys_scope>
         <sys_update_name>sys_script_include_c4005da347e3ed10acb08f22736d437a</sys_update_name>
         <sys_updated_by>erik.anderson</sys_updated_by>
-        <sys_updated_on>2023-06-26 14:41:06</sys_updated_on>
+        <sys_updated_on>2023-06-29 18:03:56</sys_updated_on>
     </sys_script_include>
 </record_update>

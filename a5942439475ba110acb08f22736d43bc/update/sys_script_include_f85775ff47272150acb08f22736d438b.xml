@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_156954_two_way.TWTempObjectPropertyMap</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>TWTempObjectPropertyMap</name>
+        <script><![CDATA[var TWTempObjectPropertyMap = Class.create();
+TWTempObjectPropertyMap.prototype = {
+    initialize: function(twTempObjectPropertyMapGr) {
+		if(twTempObjectPropertyMapGr){
+            if(typeof twTempObjectPropertyMapGr === "string"){
+                twTempObjectPropertyMapGr = this._getGlideRecordWithId(twTempObjectPropertyMapGr);
+            }
+			if(twTempObjectPropertyMapGr + "" === "[object GlideRecord]"){
+				this.setFromGr(twTempObjectPropertyMapGr);
+			}else if(twTempObjectPropertyMapGr + "" === "[object Object]"){
+				this.setFromModel(twTempObjectPropertyMapGr);
+			}
+		}
+    },
+	
+	setFromGr: function(twTempObjectPropertyMapGr){
+		this.sysId = twTempObjectPropertyMapGr.getUniqueValue();
+		this.snTable = twTempObjectPropertyMapGr.getValue("u_sn_table");
+		this.snField = twTempObjectPropertyMapGr.getValue("u_sn_field");
+		this.twTempProperty = this._getReferenceField("u_twtemp_property", twTempObjectPropertyMapGr);  
+	},
+
+	setFromModel: function(model){
+		for(var key in model){
+			this[key] = model[key];
+		}
+	},
+
+	//Internal Functions
+	
+	_getReferenceField: function(columnName, twTempObjectPropertyMapGr){
+		var returnObj = {};
+		if(columnName){
+			returnObj.id = twTempObjectPropertyMapGr.getValue(columnName);
+			returnObj.displayValue = twTempObjectPropertyMapGr.getDisplayValue(columnName);
+		}
+		return returnObj;
+	},
+
+    _getGlideRecordWithId: function(id){
+        var twTempObjectPropertyMapGr = new GlideRecord("x_156954_two_way_object_property_map");
+        if(twTempObjectPropertyMapGr.get(id)){
+            return twTempObjectPropertyMapGr;
+        }
+    },
+				
+    type: 'TWTempObjectPropertyMap'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-06-27 12:03:41</sys_created_on>
+        <sys_id>f85775ff47272150acb08f22736d438b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>TWTempObjectPropertyMap</sys_name>
+        <sys_package display_value="Two Way Sync Template" source="x_156954_two_way">a5942439475ba110acb08f22736d43bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Two Way Sync Template">a5942439475ba110acb08f22736d43bc</sys_scope>
+        <sys_update_name>sys_script_include_f85775ff47272150acb08f22736d438b</sys_update_name>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-06-27 14:10:51</sys_updated_on>
+    </sys_script_include>
+</record_update>

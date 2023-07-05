@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>u_reference_field</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-06-27 11:42:56</sys_created_on>
+        <sys_id>6c82b93f47272150acb08f22736d4339</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>u_reference_field</sys_name>
+        <sys_package display_value="Two Way Sync Template" source="x_156954_two_way">a5942439475ba110acb08f22736d43bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Two Way Sync Template">a5942439475ba110acb08f22736d43bc</sys_scope>
+        <sys_update_name>sys_ui_policy_action_6c82b93f47272150acb08f22736d4339</sys_update_name>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-06-27 11:43:09</sys_updated_on>
+        <table>x_156954_two_way_object_map</table>
+        <ui_policy display_value="Show/Hide Reference Field Based On Parent Map">3442b53f47272150acb08f22736d4329</ui_policy>
+        <visible>false</visible>
+    </sys_ui_policy_action>
+</record_update>

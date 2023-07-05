@@ -2,21 +2,21 @@
     <x_156954_two_way_object_map action="INSERT_OR_UPDATE">
         <sys_class_name>x_156954_two_way_object_map</sys_class_name>
         <sys_created_by>erik.anderson</sys_created_by>
-        <sys_created_on>2023-06-26 15:10:10</sys_created_on>
-        <sys_id>215891eb47e3ed10acb08f22736d43e8</sys_id>
+        <sys_created_on>2023-06-30 17:10:59</sys_created_on>
+        <sys_id>c80a567c47b72550acb08f22736d43ee</sys_id>
         <sys_mod_count>2</sys_mod_count>
-        <sys_name>Computers</sys_name>
+        <sys_name>Disk</sys_name>
         <sys_package display_value="Two Way Sync Template" source="x_156954_two_way">a5942439475ba110acb08f22736d43bc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Two Way Sync Template">a5942439475ba110acb08f22736d43bc</sys_scope>
-        <sys_update_name>x_156954_two_way_object_map_215891eb47e3ed10acb08f22736d43e8</sys_update_name>
+        <sys_update_name>x_156954_two_way_object_map_c80a567c47b72550acb08f22736d43ee</sys_update_name>
         <sys_updated_by>erik.anderson</sys_updated_by>
-        <sys_updated_on>2023-06-29 15:15:56</sys_updated_on>
-        <u_child_type/>
-        <u_name>Computers</u_name>
-        <u_parent/>
-        <u_reference_field>asset_tag</u_reference_field>
-        <u_sn_table>cmdb_ci_computer</u_sn_table>
+        <sys_updated_on>2023-06-30 17:22:07</sys_updated_on>
+        <u_child_type>object</u_child_type>
+        <u_name>Disk</u_name>
+        <u_parent display_value="Computers">215891eb47e3ed10acb08f22736d43e8</u_parent>
+        <u_reference_field>computer</u_reference_field>
+        <u_sn_table>cmdb_ci_storage_device</u_sn_table>
         <u_twtemp_object display_value="Computer">1807ec7d475ba110acb08f22736d43a8</u_twtemp_object>
     </x_156954_two_way_object_map>
 </record_update>
