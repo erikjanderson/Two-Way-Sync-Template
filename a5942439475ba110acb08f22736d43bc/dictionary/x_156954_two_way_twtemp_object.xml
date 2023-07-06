@@ -2,7 +2,7 @@
     <element attributes="update_synch=true" db_object_id="e0356879475ba110acb08f22736d434e" extends="sys_metadata" label="TWTemp Object" max_length="40" name="x_156954_two_way_twtemp_object" type="collection">
         <element display="true" label="Label" mandatory="true" max_length="40" name="u_label" type="string"/>
         <element label="Name" mandatory="true" max_length="40" name="u_name" type="string"/>
-        <element label="Parent" max_length="32" name="u_parent" reference="x_156954_two_way_twtemp_object" type="reference"/>
+        <element label="Parent" max_length="32" name="u_parent" reference="x_156954_two_way_twtemp_object" reference_cascade_rule="delete" type="reference"/>
         <element choice="3" default="object" label="Type" mandatory="true" max_length="40" name="u_type" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Object" sequence="0" value="object"/>
