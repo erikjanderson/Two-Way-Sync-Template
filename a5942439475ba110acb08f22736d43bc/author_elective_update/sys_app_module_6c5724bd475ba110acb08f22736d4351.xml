@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application/>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>TWTemp Object Properties</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_156954_two_way_twtemp_object_property</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_156954_two_way.admin</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-06-08 14:50:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6c5724bd475ba110acb08f22736d4351</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TWTemp Object Properties</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Two Way Sync Template" source="x_156954_two_way">a5942439475ba110acb08f22736d43bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Two Way Sync Template">a5942439475ba110acb08f22736d43bc</sys_scope>
+        <sys_update_name>sys_app_module_6c5724bd475ba110acb08f22736d4351</sys_update_name>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-06-08 14:50:36</sys_updated_on>
+        <timeline_page/>
+        <title>TWTemp Object Properties</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Two Way Sync Template">a5942439475ba110acb08f22736d43bc</application>
+        <file_path/>
+        <instance_id>8f3db847db8a9d508aea21c4059619e6</instance_id>
+        <instance_name>dev136818</instance_name>
+        <name>sys_app_module_6c5724bd475ba110acb08f22736d4351</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application/><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>TWTemp Object Properties</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_156954_two_way_twtemp_object_property</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><roles>x_156954_two_way.admin</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>erik.anderson</sys_created_by><sys_created_on>2023-06-08 14:50:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>6c5724bd475ba110acb08f22736d4351</sys_id><sys_mod_count>0</sys_mod_count><sys_name>TWTemp Object Properties</sys_name><sys_overrides/><sys_package display_value="Two Way Sync Template" source="x_156954_two_way">a5942439475ba110acb08f22736d43bc</sys_package><sys_policy/><sys_scope display_value="Two Way Sync Template">a5942439475ba110acb08f22736d43bc</sys_scope><sys_update_name>sys_app_module_6c5724bd475ba110acb08f22736d4351</sys_update_name><sys_updated_by>erik.anderson</sys_updated_by><sys_updated_on>2023-06-08 14:50:36</sys_updated_on><timeline_page/><title>TWTemp Object Properties</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>471488035</payload_hash>
+        <record_name>TWTemp Object Properties</record_name>
+        <reverted_from/>
+        <source>e5942439475ba110acb08f22736d43be</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-07-07 01:05:39</sys_created_on>
+        <sys_id>0f900bbe4733a110acb08f22736d43db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1892de21a690000001</sys_recorded_at>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-07-07 01:05:39</sys_updated_on>
+        <type>Module</type>
+        <update_guid>c7900bbe8533a110f5d913537696a9db</update_guid>
+        <update_guid_history>c7900bbe8533a110f5d913537696a9db:0,285724bd025ba1103147a8fa85a3d454:-523535259</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="TWTemp Object Properties">89a04bbe4733a110acb08f22736d43e0</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-07-07 01:05:47</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>51e6583d85874b209fa01bdbb1f47100</sys_id>
+        <sys_metadata>6c5724bd475ba110acb08f22736d4351</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TWTemp Object Properties</sys_name>
+        <sys_package display_value="Two Way Sync Template" source="x_156954_two_way">a5942439475ba110acb08f22736d43bc</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Two Way Sync Template">a5942439475ba110acb08f22736d43bc</sys_scope>
+        <sys_scope_delete display_value="">8c5b757b3d19422b91d701ef82728059</sys_scope_delete>
+        <sys_update_name>sys_app_module_6c5724bd475ba110acb08f22736d4351</sys_update_name>
+        <sys_update_version display_value="sys_app_module_6c5724bd475ba110acb08f22736d4351">0f900bbe4733a110acb08f22736d43db</sys_update_version>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-07-07 01:05:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

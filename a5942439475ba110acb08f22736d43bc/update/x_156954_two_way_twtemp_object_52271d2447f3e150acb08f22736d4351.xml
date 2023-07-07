@@ -4,14 +4,15 @@
         <sys_created_by>erik.anderson</sys_created_by>
         <sys_created_on>2023-06-29 17:38:45</sys_created_on>
         <sys_id>52271d2447f3e150acb08f22736d4351</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>IP Address</sys_name>
         <sys_package display_value="Two Way Sync Template" source="x_156954_two_way">a5942439475ba110acb08f22736d43bc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Two Way Sync Template">a5942439475ba110acb08f22736d43bc</sys_scope>
         <sys_update_name>x_156954_two_way_twtemp_object_52271d2447f3e150acb08f22736d4351</sys_update_name>
         <sys_updated_by>erik.anderson</sys_updated_by>
-        <sys_updated_on>2023-06-29 17:38:45</sys_updated_on>
+        <sys_updated_on>2023-07-07 12:33:47</sys_updated_on>
+        <u_active>true</u_active>
         <u_label>IP Address</u_label>
         <u_name>ip</u_name>
         <u_parent display_value="MAC Address">f41e0d2347e3ed10acb08f22736d4334</u_parent>

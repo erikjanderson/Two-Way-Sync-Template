@@ -39,10 +39,11 @@ TWTempObject.prototype = {
 
 	initializeNewObject: function(objectPath){
 		if(!this._twObjectPathDictionary){
-			this._twObjectPathDictionary = this._buildTWObjectPathDictionary();
+			this._twObjectPathDictionary = this._buildTWObjectPathDictionary();	
+		}
+		if(!objectPath){
 			this._mainObject = this._copyObject(this._twObjectPathDictionary.objectDictionary[this.sysId]);
 		}
-
 		var targetObject = this._twObjectPathDictionary.objectDictionary[objectPath];
 		if(!targetObject){
 			return {}
@@ -51,8 +52,10 @@ TWTempObject.prototype = {
 	},
 
 	setValue: function(propertyId, value, locations){
+		gs.debug('Two Way Sync Template TWTempObject (setValue): propertyId: ' + propertyId + '   value: ' + value + '   locations:' + locations);
 		if(!this._twObjectPathDictionary){
 			this._twObjectPathDictionary = this._buildTWObjectPathDictionary();
+			gs.info(JSON.stringify(this._twObjectPathDictionary));
 			this._mainObject = this._copyObject(this._twObjectPathDictionary.objectDictionary[this.sysId]);
 
 		}
@@ -145,7 +148,7 @@ TWTempObject.prototype = {
 					[this.sysId]: this._getObjectSchema()
 				}
 			};
-			prePath = [];
+			prePath = ''
 		}else{
 			prePath += '(.)';
 		}
@@ -200,13 +203,13 @@ TWTempObject.prototype = {
         <sys_created_by>erik.anderson</sys_created_by>
         <sys_created_on>2023-06-26 14:33:24</sys_created_on>
         <sys_id>c4005da347e3ed10acb08f22736d437a</sys_id>
-        <sys_mod_count>95</sys_mod_count>
+        <sys_mod_count>108</sys_mod_count>
         <sys_name>TWTempObject</sys_name>
         <sys_package display_value="Two Way Sync Template" source="x_156954_two_way">a5942439475ba110acb08f22736d43bc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Two Way Sync Template">a5942439475ba110acb08f22736d43bc</sys_scope>
         <sys_update_name>sys_script_include_c4005da347e3ed10acb08f22736d437a</sys_update_name>
         <sys_updated_by>erik.anderson</sys_updated_by>
-        <sys_updated_on>2023-07-06 17:15:31</sys_updated_on>
+        <sys_updated_on>2023-07-07 12:55:29</sys_updated_on>
     </sys_script_include>
 </record_update>

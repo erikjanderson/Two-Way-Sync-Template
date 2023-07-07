@@ -112,6 +112,20 @@
             <sys_user/>
             <type/>
         </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_active</element>
+            <position>8</position>
+            <sys_created_by>erik.anderson</sys_created_by>
+            <sys_created_on>2023-07-07 12:15:23</sys_created_on>
+            <sys_id>71e9d58747f72110acb08f22736d43f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_156954_two_way_object_map" sys_domain="global" view="Default view">955759a747e3ed10acb08f22736d438f</sys_ui_section>
+            <sys_updated_by>erik.anderson</sys_updated_by>
+            <sys_updated_on>2023-07-07 12:15:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
             <header>false</header>
