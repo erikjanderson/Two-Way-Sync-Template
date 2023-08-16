@@ -89,6 +89,45 @@ TWTempObject.prototype = {
 		}
 	},
 
+	indexObject: function(twTempObject, indexObject, path){
+		//Create index map of object based on this model's object structure.
+		if(!twTempObject){
+			return {};
+		}
+		if(!indexObject){
+			indexObject = {};
+			path = '';
+		}else{
+			path += '.';
+		}
+
+		for(var propertyName in this.properties){
+			var property = this.properties[propertyName];
+			var newPath = path + property.sysId;			
+			indexObject[newPath] = twTempObject[propertyName]; 
+		}
+
+		for(var objectName in this.childObjects){
+			var childObject = this.childObjects[objectName];
+			var newPath = path + childObject.sysId;
+			if(childObject.objectType === 'array'){
+				childObject.indexArray(twTempObject[objectName], indexObject, newPath);
+			}else if(childObject.objectType === 'object'){
+				childObject.indexObject(twTempObject[objectName], indexObject, newPath);
+			}
+		}
+		return indexObject;
+	},
+
+	indexArray: function(twTempArray, indexObject, path){
+		if(!twTempArray){
+			return;
+		}
+		for(var i = 0; i < twTempArray.length; i++){
+			this.indexObject(twTempArray[i], indexObject, path + '[' + i + ']');
+		}
+	},
+
 	getTWObject: function(){
 		if(!this._mainObject){
 			gs.info('Two Way Sync Template TWTempObject (getTWObject): no object has been set');
@@ -203,13 +242,13 @@ TWTempObject.prototype = {
         <sys_created_by>erik.anderson</sys_created_by>
         <sys_created_on>2023-06-26 14:33:24</sys_created_on>
         <sys_id>c4005da347e3ed10acb08f22736d437a</sys_id>
-        <sys_mod_count>108</sys_mod_count>
+        <sys_mod_count>128</sys_mod_count>
         <sys_name>TWTempObject</sys_name>
         <sys_package display_value="Two Way Sync Template" source="x_156954_two_way">a5942439475ba110acb08f22736d43bc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Two Way Sync Template">a5942439475ba110acb08f22736d43bc</sys_scope>
         <sys_update_name>sys_script_include_c4005da347e3ed10acb08f22736d437a</sys_update_name>
         <sys_updated_by>erik.anderson</sys_updated_by>
-        <sys_updated_on>2023-07-07 12:55:29</sys_updated_on>
+        <sys_updated_on>2023-07-12 13:11:14</sys_updated_on>
     </sys_script_include>
 </record_update>
