@@ -89,14 +89,14 @@ TWTempObjectMap.prototype = {
 			var value = indexedPreviewObject.propertyDictionary[propertyPath];
 			if (this._pathDictionary.propertyDictionary[genericPath] && this._pathDictionary.propertyDictionary[genericPath].targetId) {
 				var locations = this._getPathLocations(propertyPath);
-				this.twTempObject.setValue(this._pathDictionary.propertyDictionary[genericPath].targetId, value, locations)
+				this.twTempObject.setValue(this._pathDictionary.propertyDictionary[genericPath].targetId, value, locations);
 			}
 
 		}
 		return this.twTempObject.getTWObject();
 	},
 
-	importTWTempObject: function(twTempObject, parentGr){
+	importTWTempObject: function(currentObject, parentGr){
 
 		if(!this.twTempObject.type){
 			this.twTempObject = new TWTempObject(this.twTempObject.id);
@@ -105,23 +105,24 @@ TWTempObjectMap.prototype = {
 		//var indexedObject = this.twTempObject.indexObject(twTempObject);
 		//gs.info(JSON.stringify(indexedObject))
 
-		var snKeyValues = this._convertTWTempObjectToSN(twTempObject, parentGr);
+		var snKeyValues = this._convertTWTempObjectToSN(currentObject, parentGr);
 
 		gs.info(JSON.stringify(snKeyValues));
 
 		var gr = this._lookupGr(snKeyValues, parentGr);
 		if(gr){
-			for(var key in snKeyValues){
-				gr.setValue(key, snKeyValues[key]);
+			if(this.direction === 'inbound_outbound' || this.direction === 'inbound'){
+				for(var key in snKeyValues){
+					gr.setValue(key, snKeyValues[key]);
+				}
+				if(gr.getUniqueValue()){
+					gr.update();
+				}else{
+					gr.insert();
+				}
 			}
-			if(gr.getUniqueValue()){
-				gr.update();
-			}else{
-				gr.insert();
-			}
+			this._importChildTWTempObjects(currentObject, gr);
 		}
-
-		// this._importChildTWTempObjects(twTempObject, gr);
 	},
 
 	setFromGr: function (twTempObjectMapGr) {
@@ -140,7 +141,9 @@ TWTempObjectMap.prototype = {
 
 		this.propertyMaps = propertyData.propertyMaps;
 		this.coalesceProperties = propertyData.coalesceProperties;
+		this.direction = twTempObjectMapGr.getValue('u_direction');
 		this.childMaps = this._getChildMaps();
+
 	},
 
 	setFromModel: function (model) {
@@ -325,12 +328,12 @@ TWTempObjectMap.prototype = {
 		return locations;
 	},
 
-	_convertTWTempObjectToSN: function(twTempObject, parentGr){
+	_convertTWTempObjectToSN: function(currentObject, parentGr){
 		var snKeyValues = {};
 		for(var i = 0; i < this.propertyMaps.length; i++){
 			var propertyMap = this.propertyMaps[i];
-			if(propertyMap.twTempProperty && propertyMap.twTempProperty.displayValue && twTempObject[propertyMap.twTempProperty.displayValue]){
-				snKeyValues[propertyMap.snField] = twTempObject[propertyMap.twTempProperty.displayValue];
+			if(propertyMap.twTempProperty && propertyMap.twTempProperty.displayValue && currentObject[propertyMap.twTempProperty.displayValue]){
+				snKeyValues[propertyMap.snField] = currentObject[propertyMap.twTempProperty.displayValue];
 			}else{
 				snKeyValues[propertyMap.snField] = "";
 			}
@@ -363,18 +366,20 @@ TWTempObjectMap.prototype = {
 		return gr;
 	},
 
-	_importChildTWTempObjects: function(twTempObject, parentGr){
+	_importChildTWTempObjects: function(currentObject, parentGr){
 		for(var i = 0; i < this.childMaps.length; i++){
 			var childMap = this.childMaps[i];
-			if(twTempObject[childMap.twTempObject.name]){
+			if(currentObject[childMap.twTempObject.name] && childMap.twTempObject.sysId != this.twTempObject.sysId){
 				if(childMap.twTempObject.objectType === 'array'){
-					for(var c = 0; c < twTempObject[childMap.twTempObject.name].length; c++){
-						var arrayItem = twTempObject[childMap.twTempObject.name][c];
+					for(var c = 0; c < currentObject[childMap.twTempObject.name].length; c++){
+						var arrayItem = currentObject[childMap.twTempObject.name][c];
 						childMap.importTWTempObject(arrayItem, parentGr);
 					}
 				}else if(childMap.twTempObject.objectType === 'object'){
-					childMap.importTWTempObject(twTempObject[childMap.twTempObject.name], parentGr);
+					childMap.importTWTempObject(currentObject[childMap.twTempObject.name], parentGr);
 				}
+			}else{
+				childMap.importTWTempObject(currentObject, parentGr);
 			}
 		}
 	},
@@ -386,13 +391,13 @@ TWTempObjectMap.prototype = {
         <sys_created_by>erik.anderson</sys_created_by>
         <sys_created_on>2023-06-27 11:54:23</sys_created_on>
         <sys_id>3c3535ff47272150acb08f22736d43ba</sys_id>
-        <sys_mod_count>230</sys_mod_count>
+        <sys_mod_count>255</sys_mod_count>
         <sys_name>TWTempObjectMap</sys_name>
         <sys_package display_value="Two Way Sync Template" source="x_156954_two_way">a5942439475ba110acb08f22736d43bc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Two Way Sync Template">a5942439475ba110acb08f22736d43bc</sys_scope>
         <sys_update_name>sys_script_include_3c3535ff47272150acb08f22736d43ba</sys_update_name>
         <sys_updated_by>erik.anderson</sys_updated_by>
-        <sys_updated_on>2023-07-12 13:24:20</sys_updated_on>
+        <sys_updated_on>2023-11-03 16:02:21</sys_updated_on>
     </sys_script_include>
 </record_update>

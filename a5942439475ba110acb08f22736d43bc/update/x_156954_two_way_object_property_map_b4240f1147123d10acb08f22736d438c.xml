@@ -2,32 +2,24 @@
     <x_156954_two_way_object_property_map action="INSERT_OR_UPDATE">
         <sys_class_name>x_156954_two_way_object_property_map</sys_class_name>
         <sys_created_by>erik.anderson</sys_created_by>
-        <sys_created_on>2023-06-26 15:32:52</sys_created_on>
-        <sys_id>c08d5d634727ed10acb08f22736d4344</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>name</sys_name>
+        <sys_created_on>2023-11-03 16:07:21</sys_created_on>
+        <sys_id>b4240f1147123d10acb08f22736d438c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>asset_tag</sys_name>
         <sys_package display_value="Two Way Sync Template" source="x_156954_two_way">a5942439475ba110acb08f22736d43bc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Two Way Sync Template">a5942439475ba110acb08f22736d43bc</sys_scope>
-        <sys_update_name>x_156954_two_way_object_property_map_c08d5d634727ed10acb08f22736d4344</sys_update_name>
+        <sys_update_name>x_156954_two_way_object_property_map_b4240f1147123d10acb08f22736d438c</sys_update_name>
         <sys_updated_by>erik.anderson</sys_updated_by>
-        <sys_updated_on>2023-11-03 16:57:32</sys_updated_on>
+        <sys_updated_on>2023-11-03 16:07:21</sys_updated_on>
         <u_active>true</u_active>
-        <u_advanced>true</u_advanced>
+        <u_advanced>false</u_advanced>
         <u_coalesce>false</u_coalesce>
-        <u_inbound_script><![CDATA[(function (sourceObject, targetObject){
-
-
-
-}(sourceObject, targetObject));]]></u_inbound_script>
+        <u_inbound_script/>
         <u_map display_value="Computers">215891eb47e3ed10acb08f22736d43e8</u_map>
-        <u_outbound_script><![CDATA[(function (sourceObject, targetObject){
-
-
-
-}(sourceObject, targetObject));]]></u_outbound_script>
-        <u_sn_field>name</u_sn_field>
+        <u_outbound_script/>
+        <u_sn_field>asset_tag</u_sn_field>
         <u_sn_table>cmdb_ci_computer</u_sn_table>
-        <u_twtemp_property display_value="name">fff6cedb47576110acb08f22736d434a</u_twtemp_property>
+        <u_twtemp_property display_value="assetTag">1b55a4244733e150acb08f22736d432b</u_twtemp_property>
     </x_156954_two_way_object_property_map>
 </record_update>

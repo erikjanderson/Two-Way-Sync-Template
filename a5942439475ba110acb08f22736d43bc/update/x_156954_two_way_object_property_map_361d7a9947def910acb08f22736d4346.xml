@@ -2,24 +2,24 @@
     <x_156954_two_way_object_property_map action="INSERT_OR_UPDATE">
         <sys_class_name>x_156954_two_way_object_property_map</sys_class_name>
         <sys_created_by>erik.anderson</sys_created_by>
-        <sys_created_on>2023-06-29 18:06:55</sys_created_on>
-        <sys_id>e29dd1e847f3e150acb08f22736d437e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>ip_address</sys_name>
+        <sys_created_on>2023-11-03 15:36:41</sys_created_on>
+        <sys_id>361d7a9947def910acb08f22736d4346</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>name</sys_name>
         <sys_package display_value="Two Way Sync Template" source="x_156954_two_way">a5942439475ba110acb08f22736d43bc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Two Way Sync Template">a5942439475ba110acb08f22736d43bc</sys_scope>
-        <sys_update_name>x_156954_two_way_object_property_map_e29dd1e847f3e150acb08f22736d437e</sys_update_name>
+        <sys_update_name>x_156954_two_way_object_property_map_361d7a9947def910acb08f22736d4346</sys_update_name>
         <sys_updated_by>erik.anderson</sys_updated_by>
-        <sys_updated_on>2023-11-03 16:14:59</sys_updated_on>
+        <sys_updated_on>2023-11-03 15:36:41</sys_updated_on>
         <u_active>true</u_active>
         <u_advanced>false</u_advanced>
-        <u_coalesce>true</u_coalesce>
+        <u_coalesce>false</u_coalesce>
         <u_inbound_script/>
-        <u_map display_value="IP Address">5a7d992447f3e150acb08f22736d4359</u_map>
+        <u_map display_value="Network Adapters">4709112f47e3ed10acb08f22736d4316</u_map>
         <u_outbound_script/>
-        <u_sn_field>ip_address</u_sn_field>
-        <u_sn_table>cmdb_ci_ip_address</u_sn_table>
-        <u_twtemp_property display_value="ip">6837dd2447f3e150acb08f22736d43ac</u_twtemp_property>
+        <u_sn_field>name</u_sn_field>
+        <u_sn_table>cmdb_ci_network_adapter</u_sn_table>
+        <u_twtemp_property display_value="mac">722e492347e3ed10acb08f22736d43b4</u_twtemp_property>
     </x_156954_two_way_object_property_map>
 </record_update>

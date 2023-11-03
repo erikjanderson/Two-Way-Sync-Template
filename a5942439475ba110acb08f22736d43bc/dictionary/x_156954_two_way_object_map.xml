@@ -7,6 +7,13 @@
                 <element inactive_on_update="false" label="Object" sequence="1" value="object"/>
             </choice>
         </element>
+        <element choice="3" default="inbound_outbound" label="Direction" max_length="40" name="u_direction" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Inbound" value="inbound"/>
+                <element inactive_on_update="false" label="Inbound and Outbound" value="inbound_outbound"/>
+                <element inactive_on_update="false" label="Outbound" value="outbound"/>
+            </choice>
+        </element>
         <element label="Name" mandatory="true" max_length="40" name="u_name" type="string"/>
         <element label="Parent" max_length="32" name="u_parent" reference="x_156954_two_way_object_map" reference_cascade_rule="delete" type="reference"/>
         <element attributes="allow_references=true" dependent="u_sn_table" dependent_on_field="u_sn_table" label="Reference field" max_length="80" name="u_reference_field" type="field_name" use_dependent_field="true"/>

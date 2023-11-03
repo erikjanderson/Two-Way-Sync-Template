@@ -4,13 +4,13 @@
             <element>u_map</element>
             <position>0</position>
             <sys_created_by>erik.anderson</sys_created_by>
-            <sys_created_on>2023-06-26 15:37:27</sys_created_on>
-            <sys_id>9eae11e34727ed10acb08f22736d4323</sys_id>
+            <sys_created_on>2023-11-03 16:49:54</sys_created_on>
+            <sys_id>4fed8f1d47123d10acb08f22736d43c8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_156954_two_way_object_property_map" sys_domain="global" view="Default view">03fbd5ef47e3ed10acb08f22736d4349</sys_ui_section>
             <sys_updated_by>erik.anderson</sys_updated_by>
-            <sys_updated_on>2023-06-26 15:37:27</sys_updated_on>
+            <sys_updated_on>2023-11-03 16:49:54</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>u_sn_table</element>
             <position>1</position>
             <sys_created_by>erik.anderson</sys_created_by>
-            <sys_created_on>2023-06-26 15:37:27</sys_created_on>
-            <sys_id>12ae11e34727ed10acb08f22736d4324</sys_id>
+            <sys_created_on>2023-11-03 16:49:54</sys_created_on>
+            <sys_id>cfed8f1d47123d10acb08f22736d43c8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_156954_two_way_object_property_map" sys_domain="global" view="Default view">03fbd5ef47e3ed10acb08f22736d4349</sys_ui_section>
             <sys_updated_by>erik.anderson</sys_updated_by>
-            <sys_updated_on>2023-06-26 15:37:27</sys_updated_on>
+            <sys_updated_on>2023-11-03 16:49:54</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>.split</element>
             <position>2</position>
             <sys_created_by>erik.anderson</sys_created_by>
-            <sys_created_on>2023-06-26 15:37:27</sys_created_on>
-            <sys_id>92ae11e34727ed10acb08f22736d4324</sys_id>
+            <sys_created_on>2023-11-03 16:49:54</sys_created_on>
+            <sys_id>43ed8f1d47123d10acb08f22736d43c9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_156954_two_way_object_property_map" sys_domain="global" view="Default view">03fbd5ef47e3ed10acb08f22736d4349</sys_ui_section>
             <sys_updated_by>erik.anderson</sys_updated_by>
-            <sys_updated_on>2023-06-26 15:37:27</sys_updated_on>
+            <sys_updated_on>2023-11-03 16:49:54</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -46,111 +46,167 @@
             <element>sys_scope</element>
             <position>3</position>
             <sys_created_by>erik.anderson</sys_created_by>
-            <sys_created_on>2023-06-26 15:37:27</sys_created_on>
-            <sys_id>16ae11e34727ed10acb08f22736d4324</sys_id>
+            <sys_created_on>2023-11-03 16:49:54</sys_created_on>
+            <sys_id>c3ed8f1d47123d10acb08f22736d43c9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_156954_two_way_object_property_map" sys_domain="global" view="Default view">03fbd5ef47e3ed10acb08f22736d4349</sys_ui_section>
             <sys_updated_by>erik.anderson</sys_updated_by>
-            <sys_updated_on>2023-06-26 15:37:27</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
-            <position>4</position>
-            <sys_created_by>erik.anderson</sys_created_by>
-            <sys_created_on>2023-06-26 15:37:27</sys_created_on>
-            <sys_id>96ae11e34727ed10acb08f22736d4324</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_156954_two_way_object_property_map" sys_domain="global" view="Default view">03fbd5ef47e3ed10acb08f22736d4349</sys_ui_section>
-            <sys_updated_by>erik.anderson</sys_updated_by>
-            <sys_updated_on>2023-06-26 15:37:27</sys_updated_on>
-            <sys_user/>
-            <type>.end_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.begin_split</element>
-            <position>5</position>
-            <sys_created_by>erik.anderson</sys_created_by>
-            <sys_created_on>2023-06-26 15:37:27</sys_created_on>
-            <sys_id>1aae11e34727ed10acb08f22736d4324</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_156954_two_way_object_property_map" sys_domain="global" view="Default view">03fbd5ef47e3ed10acb08f22736d4349</sys_ui_section>
-            <sys_updated_by>erik.anderson</sys_updated_by>
-            <sys_updated_on>2023-06-26 15:37:27</sys_updated_on>
-            <sys_user/>
-            <type>.begin_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_sn_field</element>
-            <position>6</position>
-            <sys_created_by>erik.anderson</sys_created_by>
-            <sys_created_on>2023-06-26 15:37:27</sys_created_on>
-            <sys_id>9aae11e34727ed10acb08f22736d4324</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_156954_two_way_object_property_map" sys_domain="global" view="Default view">03fbd5ef47e3ed10acb08f22736d4349</sys_ui_section>
-            <sys_updated_by>erik.anderson</sys_updated_by>
-            <sys_updated_on>2023-06-26 15:37:27</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
-            <position>7</position>
-            <sys_created_by>erik.anderson</sys_created_by>
-            <sys_created_on>2023-06-26 15:37:27</sys_created_on>
-            <sys_id>1eae11e34727ed10acb08f22736d4324</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_156954_two_way_object_property_map" sys_domain="global" view="Default view">03fbd5ef47e3ed10acb08f22736d4349</sys_ui_section>
-            <sys_updated_by>erik.anderson</sys_updated_by>
-            <sys_updated_on>2023-06-26 15:37:27</sys_updated_on>
-            <sys_user/>
-            <type>.split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_twtemp_property</element>
-            <position>8</position>
-            <sys_created_by>erik.anderson</sys_created_by>
-            <sys_created_on>2023-06-26 15:37:27</sys_created_on>
-            <sys_id>9eae11e34727ed10acb08f22736d4324</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_156954_two_way_object_property_map" sys_domain="global" view="Default view">03fbd5ef47e3ed10acb08f22736d4349</sys_ui_section>
-            <sys_updated_by>erik.anderson</sys_updated_by>
-            <sys_updated_on>2023-06-26 15:37:27</sys_updated_on>
+            <sys_updated_on>2023-11-03 16:49:54</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_active</element>
-            <position>9</position>
+            <position>4</position>
             <sys_created_by>erik.anderson</sys_created_by>
-            <sys_created_on>2023-07-07 12:15:38</sys_created_on>
-            <sys_id>11f9990747f72110acb08f22736d43ca</sys_id>
+            <sys_created_on>2023-11-03 16:49:54</sys_created_on>
+            <sys_id>47ed8f1d47123d10acb08f22736d43c9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_156954_two_way_object_property_map" sys_domain="global" view="Default view">03fbd5ef47e3ed10acb08f22736d4349</sys_ui_section>
             <sys_updated_by>erik.anderson</sys_updated_by>
-            <sys_updated_on>2023-07-07 12:15:38</sys_updated_on>
+            <sys_updated_on>2023-11-03 16:49:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>5</position>
+            <sys_created_by>erik.anderson</sys_created_by>
+            <sys_created_on>2023-11-03 16:49:54</sys_created_on>
+            <sys_id>c7ed8f1d47123d10acb08f22736d43c9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_156954_two_way_object_property_map" sys_domain="global" view="Default view">03fbd5ef47e3ed10acb08f22736d4349</sys_ui_section>
+            <sys_updated_by>erik.anderson</sys_updated_by>
+            <sys_updated_on>2023-11-03 16:49:54</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>6</position>
+            <sys_created_by>erik.anderson</sys_created_by>
+            <sys_created_on>2023-11-03 16:49:54</sys_created_on>
+            <sys_id>4bed8f1d47123d10acb08f22736d43c9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_156954_two_way_object_property_map" sys_domain="global" view="Default view">03fbd5ef47e3ed10acb08f22736d4349</sys_ui_section>
+            <sys_updated_by>erik.anderson</sys_updated_by>
+            <sys_updated_on>2023-11-03 16:49:54</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_sn_field</element>
+            <position>7</position>
+            <sys_created_by>erik.anderson</sys_created_by>
+            <sys_created_on>2023-11-03 16:49:54</sys_created_on>
+            <sys_id>cbed8f1d47123d10acb08f22736d43c9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_156954_two_way_object_property_map" sys_domain="global" view="Default view">03fbd5ef47e3ed10acb08f22736d4349</sys_ui_section>
+            <sys_updated_by>erik.anderson</sys_updated_by>
+            <sys_updated_on>2023-11-03 16:49:54</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_coalesce</element>
-            <position>10</position>
+            <position>8</position>
             <sys_created_by>erik.anderson</sys_created_by>
-            <sys_created_on>2023-07-11 12:50:30</sys_created_on>
-            <sys_id>cf48429447847110acb08f22736d4381</sys_id>
+            <sys_created_on>2023-11-03 16:49:54</sys_created_on>
+            <sys_id>4fed8f1d47123d10acb08f22736d43c9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_156954_two_way_object_property_map" sys_domain="global" view="Default view">03fbd5ef47e3ed10acb08f22736d4349</sys_ui_section>
             <sys_updated_by>erik.anderson</sys_updated_by>
-            <sys_updated_on>2023-07-11 12:50:30</sys_updated_on>
+            <sys_updated_on>2023-11-03 16:49:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>9</position>
+            <sys_created_by>erik.anderson</sys_created_by>
+            <sys_created_on>2023-11-03 16:49:54</sys_created_on>
+            <sys_id>cfed8f1d47123d10acb08f22736d43c9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_156954_two_way_object_property_map" sys_domain="global" view="Default view">03fbd5ef47e3ed10acb08f22736d4349</sys_ui_section>
+            <sys_updated_by>erik.anderson</sys_updated_by>
+            <sys_updated_on>2023-11-03 16:49:54</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_twtemp_property</element>
+            <position>10</position>
+            <sys_created_by>erik.anderson</sys_created_by>
+            <sys_created_on>2023-11-03 16:49:54</sys_created_on>
+            <sys_id>43ed8f1d47123d10acb08f22736d43ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_156954_two_way_object_property_map" sys_domain="global" view="Default view">03fbd5ef47e3ed10acb08f22736d4349</sys_ui_section>
+            <sys_updated_by>erik.anderson</sys_updated_by>
+            <sys_updated_on>2023-11-03 16:49:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_advanced</element>
+            <position>11</position>
+            <sys_created_by>erik.anderson</sys_created_by>
+            <sys_created_on>2023-11-03 16:49:54</sys_created_on>
+            <sys_id>c3ed8f1d47123d10acb08f22736d43ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_156954_two_way_object_property_map" sys_domain="global" view="Default view">03fbd5ef47e3ed10acb08f22736d4349</sys_ui_section>
+            <sys_updated_by>erik.anderson</sys_updated_by>
+            <sys_updated_on>2023-11-03 16:49:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>12</position>
+            <sys_created_by>erik.anderson</sys_created_by>
+            <sys_created_on>2023-11-03 16:49:54</sys_created_on>
+            <sys_id>47ed8f1d47123d10acb08f22736d43ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_156954_two_way_object_property_map" sys_domain="global" view="Default view">03fbd5ef47e3ed10acb08f22736d4349</sys_ui_section>
+            <sys_updated_by>erik.anderson</sys_updated_by>
+            <sys_updated_on>2023-11-03 16:49:54</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_outbound_script</element>
+            <position>13</position>
+            <sys_created_by>erik.anderson</sys_created_by>
+            <sys_created_on>2023-11-03 16:49:54</sys_created_on>
+            <sys_id>c7ed8f1d47123d10acb08f22736d43ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_156954_two_way_object_property_map" sys_domain="global" view="Default view">03fbd5ef47e3ed10acb08f22736d4349</sys_ui_section>
+            <sys_updated_by>erik.anderson</sys_updated_by>
+            <sys_updated_on>2023-11-03 16:49:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_inbound_script</element>
+            <position>14</position>
+            <sys_created_by>erik.anderson</sys_created_by>
+            <sys_created_on>2023-11-03 16:49:54</sys_created_on>
+            <sys_id>4bed8f1d47123d10acb08f22736d43ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_156954_two_way_object_property_map" sys_domain="global" view="Default view">03fbd5ef47e3ed10acb08f22736d4349</sys_ui_section>
+            <sys_updated_by>erik.anderson</sys_updated_by>
+            <sys_updated_on>2023-11-03 16:49:54</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
