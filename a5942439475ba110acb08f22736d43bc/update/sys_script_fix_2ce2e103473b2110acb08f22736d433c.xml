@@ -7,24 +7,51 @@
         <script><![CDATA[var computerMap = new TWTempObjectMap('215891eb47e3ed10acb08f22736d43e8');
 
 
+var sourceComputer = {
+    "assetTag": "ASSET123",
+    "storageType": "disk",
+    "serialNumber": "SN123",
+    "id": "123",
+    "name": "Computer 1",
+    "mac": [
+        {
+            "ipAddress": "",
+            "mac": "13:e2:65:30:10:b7",
+            "ip": [
+                {
+                    "ip": "192.168.0.1"
+                }
+            ]
+        }
+    ]
+};
+
+computerMap.importTWTempObject(sourceComputer);
+
+
+
+
+var computerMap = new TWTempObjectMap('215891eb47e3ed10acb08f22736d43e8');
+
+
 var computerGr = new GlideRecord('cmdb_ci_computer');
-computerGr.query();
-gs.info(computerGr.getRowCount())
-while(computerGr.next()){
-    computerMap.previewAndConvert(computerGr);
+
+if (computerGr.get('c26a341c4779f910acb08f22736d4371')) {
+    var computer = computerMap.previewAndConvert(computerGr);
+    gs.info(JSON.stringify(computer))
 }]]></script>
         <sys_class_name>sys_script_fix</sys_class_name>
         <sys_created_by>erik.anderson</sys_created_by>
         <sys_created_on>2023-07-07 12:54:48</sys_created_on>
         <sys_id>2ce2e103473b2110acb08f22736d433c</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Test Script</sys_name>
         <sys_package display_value="Two Way Sync Template" source="x_156954_two_way">a5942439475ba110acb08f22736d43bc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Two Way Sync Template">a5942439475ba110acb08f22736d43bc</sys_scope>
         <sys_update_name>sys_script_fix_2ce2e103473b2110acb08f22736d433c</sys_update_name>
         <sys_updated_by>erik.anderson</sys_updated_by>
-        <sys_updated_on>2023-07-07 12:58:26</sys_updated_on>
+        <sys_updated_on>2023-11-03 17:43:40</sys_updated_on>
         <unloadable>false</unloadable>
     </sys_script_fix>
 </record_update>
